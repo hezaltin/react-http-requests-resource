@@ -12,3 +12,5 @@ const post = props => (
 );
 
 export default post;
+
+//we can wrap the higherOrder Component withRouter like this export default withRouter(post) ==> will give the additional info about the router
