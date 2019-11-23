@@ -12,6 +12,7 @@ class NewPost extends Component {
     }
 
     componentDidMount(){
+        //if(this.props.auth) => this.props.history.replace('/posts') 
         console.log(this.props)
     }
 
@@ -25,7 +26,9 @@ class NewPost extends Component {
         axios.post('/posts',post)
             .then(response=>{
                 console.log(response)
-                this.setState({submitted:true});
+                //this.props.history.push('/posts') //pushes into stack
+                this.props.history.replace('/posts') // replace the previous page back button wont retain
+                //this.setState({submitted:true});
             })
     }
 
