@@ -15,7 +15,8 @@ class FullPost extends Component {
     }
 
     componentDidUpdate(){
-        this.loadData()
+        this.loadData() // handle changes in update if uses routing;
+
     }
 
     loadData(){
